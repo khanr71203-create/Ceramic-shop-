@@ -35,6 +35,15 @@
     .card{background:#fff;border:1px solid #e7e0d6;border-radius:22px;padding:30px;min-height:190px}
     .num{font-family:Georgia,serif;font-size:14px;color:#8b8379}
     .card h3{font-family:Georgia,serif;font-size:25px;font-weight:500;margin:22px 0 8px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px}
+    .product{position:relative;background:#fff;border:1px solid #e7e0d6;border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(46,38,28,.08);transition:transform .2s,box-shadow .2s}
+    .product:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(46,38,28,.14)}
+    .product-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#eee}
+    .product-info{padding:18px 18px 20px}
+    .product-info h3{font-family:Georgia,serif;font-size:21px;font-weight:500}
+    .product-info p{font-size:13px;color:#766f66;margin-top:4px}
+    .sale{position:absolute;top:14px;right:14px;background:#d71920;color:#fff;font-weight:700;font-size:13px;line-height:1.05;text-align:center;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;box-shadow:0 7px 18px rgba(0,0,0,.18);transform:rotate(8deg)}
+    .enquire{display:inline-block;margin-top:13px;font-size:13px;border-bottom:1px solid #191817;padding-bottom:2px}
     .gallery{display:grid;grid-template-columns:2fr 1fr;gap:18px}
     .gallery img{width:100%;height:420px;object-fit:cover;border-radius:22px}
     .gallery .small{height:420px;object-fit:cover;object-position:center}
@@ -48,7 +57,7 @@
       .navlinks{display:none}
       .hero-card,.hero-card img{min-height:82vh}
       .hero-content{justify-content:center}
-      .cards,.gallery{grid-template-columns:1fr}
+      .cards,.products,.gallery{grid-template-columns:1fr}
       .gallery img,.gallery .small{height:300px}
       section{padding:65px 0}
       .section-title{font-size:35px}
@@ -88,12 +97,16 @@
 
   <section id="collection">
     <div class="wrap">
-      <h2 class="section-title">Our Collection</h2>
-      <p class="sub">A premium selection for dining, gifting and stylish home spaces.</p>
-      <div class="cards">
-        <div class="card"><span class="num">01</span><h3>Tableware</h3><p>Elegant plates, bowls and everyday dining essentials.</p></div>
-        <div class="card"><span class="num">02</span><h3>Crockery</h3><p>Beautiful pieces that bring a refined touch to your table.</p></div>
-        <div class="card"><span class="num">03</span><h3>Home Decor</h3><p>Minimal ceramic accents for modern interiors.</p></div>
+      <h2 class="section-title">Featured Collection</h2>
+      <p class="sub">Explore our ceramic vases, planters and decorative pots. Every featured piece carries a special 20% OFF offer.</p>
+      <div class="products">
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="01_decorative_ceramic_vase.jpg" alt="Decorative ceramic vase"><div class="product-info"><h3>Decorative Ceramic Vase</h3><p>Hand-painted floral design</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Decorative%20Ceramic%20Vase." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="02_marble_finish_ceramic_vase.jpg" alt="Marble finish ceramic vase"><div class="product-info"><h3>Marble Finish Ceramic Vase</h3><p>Elegant textured finish</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Marble%20Finish%20Ceramic%20Vase." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="03_blue_floral_ceramic_pot.jpg" alt="Blue floral ceramic pot"><div class="product-info"><h3>Blue Floral Ceramic Pot</h3><p>Classic blue floral pattern</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Blue%20Floral%20Ceramic%20Pot." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="04_tree_design_ceramic_pot.jpg" alt="Tree design ceramic pot"><div class="product-info"><h3>Tree Design Ceramic Pot</h3><p>Artistic hand-painted look</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Tree%20Design%20Ceramic%20Pot." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="05_textured_ceramic_pot.jpg" alt="Textured ceramic pot"><div class="product-info"><h3>Textured Ceramic Pot</h3><p>Raised geometric texture</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Textured%20Ceramic%20Pot." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="06_blue_floral_planter.jpg" alt="Blue floral planter"><div class="product-info"><h3>Blue Floral Planter</h3><p>Bold floral ceramic finish</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Blue%20Floral%20Planter." target="_blank">Enquire on WhatsApp ↗</a></div></article>
+        <article class="product"><span class="sale">20%<br>OFF</span><img class="product-img" src="07_blue_pattern_ceramic_pot.jpg" alt="Blue pattern ceramic pot"><div class="product-info"><h3>Blue Pattern Ceramic Pot</h3><p>Decorative patterned finish</p><a class="enquire" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%27m%20interested%20in%20the%20Blue%20Pattern%20Ceramic%20Pot." target="_blank">Enquire on WhatsApp ↗</a></div></article>
       </div>
     </div>
   </section>
