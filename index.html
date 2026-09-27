@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1ea">
+  <title>Ceramic Shop | Wakad, Pune</title>
+  <meta name="description" content="Premium ceramic and crockery collection in Wakad, Pune.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f7f3ed;color:#191817;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(247,243,237,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(25,24,23,.08)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-family:Georgia,serif;letter-spacing:2px;font-size:20px}
+    .navlinks{display:flex;gap:22px;font-size:14px}
+    .navlinks a:hover{opacity:.6}
+    .hero{min-height:100vh;display:grid;place-items:center;padding:95px 20px 45px}
+    .hero-card{position:relative;overflow:hidden;width:min(100%,1000px);min-height:76vh;border-radius:28px;box-shadow:0 24px 70px rgba(46,38,28,.16);background:#ddd}
+    .hero-card img{width:100%;height:100%;min-height:76vh;object-fit:cover;display:block}
+    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.08))}
+    .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px}
+    .eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;margin-bottom:15px}
+    h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(52px,10vw,100px);line-height:.95;letter-spacing:-3px}
+    .hero-content p{margin-top:24px;max-width:560px;font-size:16px}
+    .buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;justify-content:center}
+    .btn{padding:13px 20px;border-radius:999px;border:1px solid #222;font-size:14px;background:#fff}
+    .btn.dark{background:#191817;color:#fff}
+    section{padding:85px 0}
+    .section-title{text-align:center;font-family:Georgia,serif;font-size:42px;font-weight:500}
+    .sub{text-align:center;max-width:620px;margin:12px auto 40px;color:#625d56}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #e7e0d6;border-radius:22px;padding:30px;min-height:190px}
+    .num{font-family:Georgia,serif;font-size:14px;color:#8b8379}
+    .card h3{font-family:Georgia,serif;font-size:25px;font-weight:500;margin:22px 0 8px}
+    .gallery{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    .gallery img{width:100%;height:420px;object-fit:cover;border-radius:22px}
+    .gallery .small{height:420px;object-fit:cover;object-position:center}
+    .contact{background:#1d1b19;color:#fff;border-radius:30px;padding:55px 35px;text-align:center}
+    .contact .sub{color:#cfc8bf}
+    .contact-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .contact .btn{background:#fff;border-color:#fff}
+    footer{text-align:center;padding:35px 20px;color:#777;font-size:13px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:20;background:#1d1b19;color:#fff;border-radius:999px;padding:14px 19px;box-shadow:0 10px 30px rgba(0,0,0,.2);font-size:14px}
+    @media(max-width:700px){
+      .navlinks{display:none}
+      .hero-card,.hero-card img{min-height:82vh}
+      .hero-content{justify-content:center}
+      .cards,.gallery{grid-template-columns:1fr}
+      .gallery img,.gallery .small{height:300px}
+      section{padding:65px 0}
+      .section-title{font-size:35px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="logo">CERAMIC SHOP</div>
+      <div class="navlinks">
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-card">
+      <img src="hero.jpg" alt="Ceramic tableware collection">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">Wakad · Pune</div>
+        <h1>Ceramic<br>Shop</h1>
+        <p>Timeless ceramic & crockery pieces for beautiful everyday spaces.</p>
+        <div class="buttons">
+          <a class="btn dark" href="tel:+919241140941">Call Now</a>
+          <a class="btn" href="https://wa.me/919241140941?text=Hello%20Ceramic%20Shop%2C%20I%20want%20to%20know%20about%20your%20collection." target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection">
+    <div class="wrap">
+      <h2 class="section-title">Our Collection</h2>
+      <p class="sub">A premium selection for dining, gifting and stylish home spaces.</p>
+      <div class="cards">
+        <div class="card"><span class="num">01</span><h3>Tableware</h3><p>Elegant plates, bowls and everyday dining essentials.</p></div>
+        <div class="card"><span class="num">02</span><h3>Crockery</h3><p>Beautiful pieces that bring a refined touch to your table.</p></div>
+        <div class="card"><span class="num">03</span><h3>Home Decor</h3><p>Minimal ceramic accents for modern interiors.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="gallery">
+        <img src="hero.jpg" alt="Ceramic collection">
+        <img class="small" src="hero.jpg" alt="Ceramic bowls and plates">
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="contact">
+        <h2 class="section-title" style="color:#fff">Visit Us</h2>
+        <p class="sub">Wakad, Kaspate Corner Signal, opposite Yug Honda Showroom, Pune</p>
+        <div class="contact-row">
+          <a class="btn" href="tel:+919241140941">+91 92411 40941</a>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Wakad%2C%20Kaspate%20Corner%20Signal%2C%20Opposite%20Yug%20Honda%20Showroom%2C%20Pune" target="_blank">Open in Maps</a>
+          <a class="btn" href="https://wa.me/919241140941" target="_blank">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float" href="https://wa.me/919241140941" target="_blank">WhatsApp ↗</a>
+
+<footer>© 2026 Ceramic Shop · Wakad, Pune</footer>
+</body>
+</html>
